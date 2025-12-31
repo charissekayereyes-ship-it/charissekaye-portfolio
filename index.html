@@ -1,0 +1,220 @@
+3:50 PM
+You sent
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Charisse Kaye G. Reyes | Creative E-Portfolio</title><style>
+:root{
+    --bg:#0f172a;          /* dark navy background */
+    --card:#111827;        /* card dark */
+    --accent:#ec4899;      /* pink accent */
+    --accent2:#38bdf8;     /* blue accent */
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:radial-gradient(circle at top, #1e293b, var(--bg));
+    color:var(--text);
+}
+
+/* FLOATING BACKGROUND SHAPES */
+.bg-shape{
+    position:fixed;
+    width:300px;
+    height:300px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    filter:blur(120px);
+    opacity:0.35;
+    animation: float 12s infinite alternate;
+    z-index:-1;
+}
+.bg-shape.one{top:-80px;left:-80px;}
+.bg-shape.two{bottom:-100px;right:-60px;animation-delay:4s;}
+
+@keyframes float{
+    from{transform:translateY(0);}
+    to{transform:translateY(80px);}
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-box{
+    background:linear-gradient(135deg,#020617,#020617) padding-box,
+               linear-gradient(135deg,var(--accent),var(--accent2)) border-box;
+    border:2px solid transparent;
+    padding:70px 60px;
+    border-radius:40px;
+    box-shadow:0 40px 80px rgba(0,0,0,0.6);
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(40px);} 
+    to{opacity:1;transform:translateY(0);} 
+}
+
+.hero h1{
+    font-size:52px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:var(--muted);
+}
+
+/* SECTIONS */
+section{
+    max-width:1100px;
+    margin:100px auto;
+    padding:0 25px;
+}
+
+section h2{
+    font-size:34px;
+    margin-bottom:30px;
+    position:relative;
+}
+section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:block;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+/* GLASS CARDS */
+.card{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:35px;
+    border-radius:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.5);
+    transition:all 0.4s ease;
+}
+.card:hover{
+    transform:translateY(-15px) scale(1.02);
+    box-shadow:0 40px 90px rgba(236,72,153,0.35);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+/* PROFILE */
+.profile{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    gap:40px;
+}
+
+.avatar{
+    width:220px;
+    height:220px;
+    border-radius:30px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:56px;
+    font-weight:700;
+    box-shadow:0 30px 70px rgba(56,189,248,0.4);
+}
+
+/* SKILLS */
+.skill{
+    margin-bottom:18px;
+}
+.skill span{
+    display:block;
+    height:14px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));
+    border-radius:20px;
+    width:0;
+    animation:load 2s forwards;
+}
+@keyframes load{
+    to{width:var(--level);} 
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:50px 20px;
+    color:var(--muted);
+}
+</style></head>
+<body><div class="bg-shape one"></div>
+<div class="bg-shape two"></div><!-- HERO --><div class="hero">
+    <div class="hero-box">
+        <h1>Charisse Kaye G. Reyes</h1>
+        <p>Student • Creative Thinker • Future Professional</p>
+    </div>
+</div><!-- ABOUT --><section>
+    <h2>About Me</h2>
+    <div class="card profile">
+        <div class="avatar">CR</div>
+        <p>
+            I am Charisse Kaye G. Reyes, a passionate and  motivated 18years old  student of Comouter Science at Sultan Kudarat State University who values creativity, growth, and perseverance. This portfolio highlights my academic journey,
+            skills, and experiences that shape my future goals.
+        </p>
+    </div>
+</section><!-- SKILLS --><section>
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skill" style="--level:90%"><span></span></div>
+        <div class="skill" style="--level:80%"><span></span></div>
+        <div class="skill" style="--level:70%"><span></span></div>
+        <p>Communication • Teamwork • Time Management • Basic Web Design</p>
+    </div>
+</section><!-- PROJECTS --><section>
+    <h2>Projects & Experiences</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Academic Works</h3>
+            <p>Research papers, presentations, and collaborative school projects.</p>
+            <p><strong>Skills:</strong> Research, Writing, Collaboration</p>
+        </div>
+        <div class="card">
+            <h3>Creative Portfolio</h3>
+            <p>Designed a visually engaging e-portfolio with animations and effects.</p>
+            <p><strong>Skills:</strong> HTML, CSS, UI Design</p>
+        </div>
+    </div>
+</section><!-- GOALS --><section>
+    <h2>Career Goals</h2>
+    <div class="card">
+        <p>
+            My goal is to continuously improve my skills and become a confident,
+            capable professional who contributes positively to society.
+        </p>
+    </div>
+</section><footer>
+     Charisse Kaye G. Reyes • Creative Motion Portfolio
+</footer></body>
+</html>
